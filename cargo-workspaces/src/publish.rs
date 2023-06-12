@@ -88,7 +88,7 @@ impl Publish {
 
             let name_ver = format!("{} v{}", name, version);
 
-            if version == "0.0.0" {
+            if version == &"0.0.0" {
                 info!("is a pre-publish crate (version 0.0.0)", name_ver);
                 continue;
             }
